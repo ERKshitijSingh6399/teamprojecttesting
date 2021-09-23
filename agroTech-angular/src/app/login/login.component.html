@@ -1,13 +1,15 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active"> Sign In </h2>
+    <h2 class="inactive underlineHover" routerLink="/register">Sign Up </h2>
 
-<h2>Login Page</h2>   
-<div class="container-fluid">    
-     <label> Email </label>    
-    <input class="form-control" type="text" [(ngModel)]="farmer.email" name="email"  placeholder="Enter Email">    
-    <br>    
-    <label>Password</label>    
-    <input class="form-control" type="Password" [(ngModel)]="farmer.password" name="password" placeholder="Enter your Password">    
-    <br>   
-    <button class="btn btn-primary" type="button" (click)="getAccountByEmail()">Login</button>   
-    <br><br>
-<br><br>     
-</div> 
+    <!-- Login Form -->
+    <form>
+      <input type="text" [(ngModel)]="farmer.email" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="password" [(ngModel)]="farmer.password" id="password" class="fadeIn third" name="login" placeholder="password">
+      <button class="btn btn-primary" type="button" (click)="getAccountByEmail()">Sign Up</button>
+    </form>
+
+  </div>
+</div>

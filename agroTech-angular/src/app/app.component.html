@@ -1,21 +1,17 @@
 <header class="head">
   <nav class="navbar navbar-expand-lg" style="background-color: #33691E;">
-    <a class="navbar-brand brand" style="background-color:#66BB6A;">Agrotek</a>
+    <a class="navbar-brand brand" routerLink="/home" style="background-color:#66BB6A;">Agrotek</a>
 
     <div id="my-nav" class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" routerLink="/home">HOME <span class="sr-only"></span></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false"> CROPS </a>
-          <ul class="dropdown-menu">
-            <li><a href="/">DIARY</a></li>
-            <li><a href="/">PADDY</a></li>
-            <li><a href="/">WHEAT</a></li>
-
-          </ul>
+        <li class="nav-item ">
+          <a class="nav-link" routerLink="/learn">LEARN</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link"  routerLink="/shop">SHOP</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link" href="app.component.html">AGRI-FEED</a>
@@ -36,24 +32,33 @@
   </div>
 </header>
 
+
+
+
+
 <footer class="footer">
   <div class="grid">
     <div class="about-one" style="margin-left: 4rem;">
       <h2>About AgroTech</h2>
       <p class="text-justify">
-        If anything’s hot in today’s economy, it’s saving money, including a broad range of green businesses helping
-        people save energy, water, and other resources. Definitely, you can go with this business as it is a nothing but
-        the future.
+        Now a days farmers are not getting help even though farming s the most important profession . they are getting low qulatity seeds
+        and fertilizers we solve that
       </p>
-      <a href="/" class="btn btn-primary">About Us</a>
+      <a href="/home" class="btn btn-primary">About Us</a>
     </div>
     <div class="about-two">
       <h2>Our Promises</h2>
+      <p class="text-justify">
+        We promise you the best qualuty seeds
+        We promise you the best qualuty fertilizers
+        We promise you the best qualuty information
+        We promise you the best qualuty advices from experts
+      </p>
     </div>
     <div class="about-three">
       <h2>Contact Us</h2>
-      <label for="">email : agrotech.solutions@farmer.com</label>
-      <p>(+91)3456789012</p>
+      <label >email : info@agrotech.com</label>
+      <p>(+91)9874455662</p>
       <div class="inner-grid">
         <div>
           <p>

@@ -1,1 +1,19 @@
-<p>register works!</p>
+
+<div class="wrapper fadeInDown">
+    
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="inactive" routerLink="/login"> Sign In </h2>
+      <h2 class="active" routerLink="/register">Sign Up </h2>
+  
+      <!-- Login Form -->
+      <form>
+        <input type="text" [(ngModel)]="farmer.farmerName" class="fadeIn second" name="name" placeholder="Enter your Name">
+        <input type="text" [(ngModel)]="farmer.email" class="fadeIn second" name="email" placeholder="Enter Email">
+        <input type="password" [(ngModel)]="farmer.password" class="fadeIn second" name="password" placeholder="Enter Password">
+        <br>
+        <button class="btn btn-primary" type="button" (click)="createAccount()">Sign Up</button>
+      </form>
+  
+    </div>
+  </div>

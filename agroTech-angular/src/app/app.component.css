@@ -18,9 +18,10 @@ body{
 .brand{
     padding: 0rem 2rem;
     font-size: 40px;
+	font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     color: white;
-    margin-right: 500px;
+    margin-right: 400px;
 }
 
 li{
@@ -149,9 +150,6 @@ footer{
 .inner-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-.inner-grid div{
-    padding:1rem;
 }
 
 hr{
