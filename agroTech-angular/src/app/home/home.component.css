@@ -1,8 +1,4 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+
 .slider-caption {
 	position: absolute;
 	left: 0;
@@ -99,7 +95,8 @@
 	color: #fff;
 }
 #carouselExampleControls img{
-    width: 100%;
+	
+    width: 100px;
     height:80vh;
 
 }

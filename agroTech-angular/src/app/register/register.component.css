@@ -1,9 +1,7 @@
 
 
 /* BASIC */
-
-
-  
+ 
   body {
     font-family: "Poppins", sans-serif;
     height: 150vh;
@@ -31,7 +29,7 @@
   /* STRUCTURE */
   
   
-  .wrapper {
+  .wrapper { 
     display: flex;
     align-items: center;
     flex-direction: column; 
@@ -46,6 +44,7 @@
   }
   
   #formContent {
+    overflow-y: scroll;
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     background: #fff;

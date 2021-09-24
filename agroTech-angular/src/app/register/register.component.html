@@ -1,18 +1,18 @@
 
 <div class="wrapper fadeInDown">
-    
-    <div id="formContent">
-      <!-- Tabs Titles -->
-      <h2 class="inactive" routerLink="/login"> Sign In </h2>
-      <h2 class="active" routerLink="/register">Sign Up </h2>
   
-      <!-- Login Form -->
+    <div id="formContent">
+      <h2 class="inactive" routerLink="/login"> Login </h2>
+      <h2 class="active" routerLink="/register"> Register </h2>
       <form>
-        <input type="text" [(ngModel)]="farmer.farmerName" class="fadeIn second" name="name" placeholder="Enter your Name">
-        <input type="text" [(ngModel)]="farmer.email" class="fadeIn second" name="email" placeholder="Enter Email">
-        <input type="password" [(ngModel)]="farmer.password" class="fadeIn second" name="password" placeholder="Enter Password">
+        <input type="text" [(ngModel)]="farmer.farmerName"  name="name" placeholder="Enter your Name">
+        <input type="text" [(ngModel)]="farmer.email"  name="email" placeholder="Enter Email" required>
+        <input type="text" [(ngModel)]="farmer.contactNumber" name="contactNumber" placeholder="Enter Mobile Number" required>
+        <input type="text" [(ngModel)]="farmer.age" name="age" placeholder="Enter Age">
+        <input type="text" [(ngModel)]="farmer.gender" name="gender" placeholder="Enter Gender">
+        <input type="password" [(ngModel)]="farmer.password" name="password" placeholder="Enter Password" required>
         <br>
-        <button class="btn btn-primary" type="button" (click)="createAccount()">Sign Up</button>
+        <button class="btn btn-primary" type="button" (click)="createAccount()">Register </button>
       </form>
   
     </div>
