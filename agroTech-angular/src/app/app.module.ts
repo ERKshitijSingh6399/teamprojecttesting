@@ -13,6 +13,7 @@ import { UpdateFarmerComponent } from './update-farmer/update-farmer.component';
 import { AgriFeedComponent } from './agri-feed/agri-feed.component';
 import { FarmerHomeComponent } from './farmer-home/farmer-home.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     UpdateFarmerComponent,
     AgriFeedComponent,
     FarmerHomeComponent,
-    FooterComponent
+    FooterComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,

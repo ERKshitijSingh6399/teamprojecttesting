@@ -14,8 +14,8 @@ export class RegisterComponent {
     this.farmer=new Farmer();
   }
 
-  public createFarmerAccount(){
-    this.service.createFarmerAccount(this.farmer).subscribe(res =>{
+  public addFarmer(){
+    this.service.addFarmer(this.farmer).subscribe(res =>{
       this.farmer= new Farmer();
       this.router.navigate(['/login']);
     })

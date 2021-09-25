@@ -8,4 +8,5 @@ import { HomeComponent } from './home/home.component';
 })
 export class AppComponent {
   title = 'agroTech-angular';
+  flag=false;
 }

@@ -1,6 +1,7 @@
 <header class="head">
-  <nav class="navbar navbar-expand-lg" style="background-color: #33691E;">
-    <a class="navbar-brand brand" routerLink="/home" style="background-color:#66BB6A;">Agrotek</a>
+  <nav class="navbar navbar-expand-lg" style="background-color: #1B5E20;">
+    <a class="navbar-brand brand" routerLink="/home"><img class="logo" src="\assets\FarmTwo (2).png" alt=""> 
+    </a>
 
     <div id="my-nav" class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
@@ -16,18 +17,22 @@
         <li class="nav-item ">
           <a class="nav-link" routerLink="/learn">LEARN</a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link"  routerLink="/login">LOGIN</a>
+        <!-- *ngIf="flag" -->
+        <li class="nav-item" >
+          <a class="nav-link"  routerLink="/login">LOGIN</a>   
         </li>
-        <li class="nav-item ">
+        <li class="nav-item " >
           <div class="dropdown">
             <button class="btn btn-ssuccess dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               My Account
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" routerLink="/updateFarmer">Update Account</a>
+              <a class="dropdown-item" routerLink="/updateFarmer">Delete Account</a>
               <a class="dropdown-item" routerLink="/viewOrders">View Orders</a>
               <a class="dropdown-item" routerLink="/home">Log Out</a>
+
+              <a class="dropdown-item" routerLink="/viewOrders">View All Orders</a>
             </div>
           </div>
         </li>

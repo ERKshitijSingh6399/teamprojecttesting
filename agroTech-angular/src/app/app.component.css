@@ -16,13 +16,22 @@ body{
 }
 
 .brand{
+
+
     padding: 0rem 2rem;
     font-size: 40px;
 	font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
     color: white;
     margin-right: 250px;
+	
 }
+
+.logo{
+	height: 50px;
+	width: 100px;
+}
+
 
 li{
     
@@ -161,3 +170,5 @@ hr{
     height:100vh;
 
 }
+
+  
