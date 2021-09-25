@@ -10,6 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { LearnComponent } from './learn/learn.component';
 import { ShopComponent } from './shop/shop.component';
 import { UpdateFarmerComponent } from './update-farmer/update-farmer.component';
+import { AgriFeedComponent } from './agri-feed/agri-feed.component';
+import { FarmerHomeComponent } from './farmer-home/farmer-home.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { UpdateFarmerComponent } from './update-farmer/update-farmer.component';
     HomeComponent,
     LearnComponent,
     ShopComponent,
-    UpdateFarmerComponent
+    UpdateFarmerComponent,
+    AgriFeedComponent,
+    FarmerHomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -27,6 +33,6 @@ import { UpdateFarmerComponent } from './update-farmer/update-farmer.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent,HomeComponent,LoginComponent]
 })
 export class AppModule { }

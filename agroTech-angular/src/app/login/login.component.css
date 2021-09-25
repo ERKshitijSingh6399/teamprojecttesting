@@ -9,7 +9,8 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
+  
+  
 }
 
 h2 {
@@ -24,16 +25,19 @@ h2 {
 
 
 
+
 /* STRUCTURE */
 
 .wrapper {
+ border-radius: 1rem;
+  margin-top: 30px;
+  left: -300px;
+	width: 1150px;
+  height: 80vh;
   display: flex;
   align-items: center;
   flex-direction: column; 
   justify-content: center;
-  width: 100%;
-  min-height: 100%;
-  padding: 20px;
   background-image: url('src\assets\login-background.jpg');
   background-position: center center;
   background-size: cover;

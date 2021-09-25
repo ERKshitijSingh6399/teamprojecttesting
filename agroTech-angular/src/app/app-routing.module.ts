@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AgriFeedComponent } from './agri-feed/agri-feed.component';
+import { FarmerHomeComponent } from './farmer-home/farmer-home.component';
+import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { LearnComponent } from './learn/learn.component';
 import { LoginComponent } from './login/login.component';
@@ -15,6 +18,9 @@ const routes: Routes = [
   {path: 'learn',component:LearnComponent},
   {path: 'shop',component:ShopComponent},
   {path: 'updateFarmer',component:UpdateFarmerComponent},
+  {path: 'agriFeed',component:AgriFeedComponent},
+  {path: 'farmerHome',component:FarmerHomeComponent},
+  {path: 'footer',component:FooterComponent},
 
 ];
 

@@ -11,7 +11,7 @@
           <a class="nav-link"  routerLink="/shop">SHOP</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="app.component.html">AGRI-FEED</a>
+          <a class="nav-link" routerLink="/agriFeed">AGRI-FEED</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link" routerLink="/learn">LEARN</a>
@@ -31,61 +31,16 @@
             </div>
           </div>
         </li>
-
       </ul>
     </div>
   </nav>
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
+  
 </header>
-
-
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="slider-caption h2slider">
-        <div class="container">
-          <strong>AgroTech<span> is the Best</span></strong>
-          <h1>Farmer Friendly</h1>
-          <p>Nonprofit Helping Product</p>
-          <a  class="active">Find Out More</a> <a routerLink="/register">Join us Now</a>
-        </div>
-      </div>
-      <img class="d-block w-100" src="assets/home-slide1.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <div class="slider-caption h2slider">
-        <div class="container">
-          <strong><span>Use</span> Crop Reports & </strong>
-          <h1>To get Better Yield</h1>
-          <p>of <strong>Crops</strong> in your Fields</p>
-          <a href="#" class="active">Find Out More</a> <a routerLink="/register">Join us Now</a>
-        </div>
-      </div>
-      <img class="d-block w-100" src="assets/home-slide2.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <div class="slider-caption h2slider">
-        <div class="container">
-          <strong>Grow Variety of Crops<span></span> partner Farmer</strong>
-          <h1>Use best Seeds</h1>
-          <p>Before <strong>it’s too late</strong> for u...</p>
-          <a href="#" class="active">Find Out More</a> <a routerLink="/register">Join us Now</a>
-        </div>
-      </div>
-      <img class="d-block w-100" src="assets/home-slide3.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+<div class="container">
+  <router-outlet></router-outlet>
 </div>
+
+
 <footer class="footer">
   <div class="grid">
     <div class="about-one" style="margin-left: 4rem;">
