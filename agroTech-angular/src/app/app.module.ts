@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -11,9 +10,9 @@ import { LearnComponent } from './learn/learn.component';
 import { ShopComponent } from './shop/shop.component';
 import { UpdateFarmerComponent } from './update-farmer/update-farmer.component';
 import { AgriFeedComponent } from './agri-feed/agri-feed.component';
-import { FarmerHomeComponent } from './farmer-home/farmer-home.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,16 +24,16 @@ import { ContentComponent } from './content/content.component';
     ShopComponent,
     UpdateFarmerComponent,
     AgriFeedComponent,
-    FarmerHomeComponent,
     FooterComponent,
     ContentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent,HomeComponent,LoginComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

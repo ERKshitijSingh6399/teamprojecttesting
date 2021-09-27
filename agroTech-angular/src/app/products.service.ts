@@ -11,7 +11,7 @@ export class ProductsService {
   private url :string;
 
   constructor(private http: HttpClient) { 
-    this.url="http://localhost:9100/products";
+    this.url="http://localhost:9100/farmer";
   }
 
   public getAllProducts(): Observable<Products[]>{
