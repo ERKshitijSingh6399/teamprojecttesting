@@ -19,16 +19,21 @@ export class FarmerService {
     return this.http.post<Farmer>(this.url + "/registerfarmer",farmer);
   }
 
-  // public getAccountbyEmail(email : string  ) : Promise<any>{
-  //   return this.http.get<Farmer>(this.url,email);
+  public loginFarmer(farmer:Farmer) :Observable <any> {
+    return this.http.post<any>(this.url+"/logincheck", farmer);
+  }
+
+  // public checklogincredentials(farmer:Farmer) :Observable <any> {
+  //   return this.http.post<any>(this.url+"/logincheck", farmer);
   // }
 
   public updateFarmer(farmer :Farmer): Observable<Farmer> {
-    return this.http.put<Farmer>(this.url, farmer);
+    return this.http.put<Farmer>(this.url + "/updatefarmer", farmer);
   }
-  public deleteFarmer(id: number): void {
-    this.http.delete(this.url + "/{id}");
+  public deleteFarmer(farmerId: number){
+    this.http.delete(this.url + "/deletefarmer/"+farmerId);
   }
+ 
 
   
 

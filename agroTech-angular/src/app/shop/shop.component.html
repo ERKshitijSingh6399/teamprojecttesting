@@ -1,4 +1,4 @@
-<h1 class="text-center">SEEDS </h1>
+<!-- <h1 class="text-center">SEEDS </h1>
 <section class="section-grid">
     <div class="div-grids">
         <div class="product">
@@ -129,4 +129,66 @@
             <p class="text-center"><button class="btn text-center">Add To Cart</button></p>
         </div>
     </div>
+</section> -->
+
+
+ <!-- <h1 class="text-center">SEEDS </h1>
+<section class="section-grid">
+    <div class="div-grids">
+        <div class="product" *ngFor="let product of products">
+            <p class="text-center"><img class="img-fluid" src="assets\paddy-seeds.jpeg" alt=""></p>
+          
+            <p class="text-center">{{product.productName}}</p>
+            <p class="text-center">{{product.productPrice}}</p>
+         
+            <p class="text-center"><button class="btn text-center">Add To Cart</button></p>
+        </div>
+    </div>
+</section>  -->
+
+
+
+
+    <div class="row">
+        <div class="card">
+            <div class="product" *ngFor="let product of products">
+                <p class="text-center"><img class="img-fluid" src="assets\paddy-seeds.jpeg" alt=""></p>
+                <p class="text-center">{{products.productCompanyName}}</p>
+                <p class="text-center">{{product.productName}}</p>
+                <p class="text-center">{{product.productPrice}}</p>
+                <p class="text-center">{{products.productQuantity}}</p>
+                <p class="text-center"><button class="btn text-center">Add To Cart</button></p>
+            
+            </div>
+          </div>
+       </div> 
+
+
+<h1 class="text-center">FERTILIZERS</h1>
+<section class="section-grid">
+    <div class="div-grids">
+        <div class="product">
+            <p class="text-center"><img class="img-fluid" src="assets\paddy-seeds.jpeg" alt=""></p>
+            <p class="text-center">25P35 HYBRID PADDY (RICE)(धान )</p>
+            <p class="text-center">DuPont Pioneer</p>
+            <p class="text-center">₹ 990</p>
+            <p class="text-center">3 kg</p>
+            <p class="text-center"><button class="btn text-center">Add To Cart</button></p>
+        </div>
+    </div>
 </section>
+
+<!-- <div class="row">
+    <div class="column">
+      <div class="card">
+           <div class="product" *ngFor="let product of products">
+        <p class="text-center"><img class="img-fluid" src="assets\paddy-seeds.jpeg" alt=""></p>
+      
+        <p class="text-center">{{product.productName}}</p>
+        <p class="text-center">{{product.productPrice}}</p>
+     
+        <p class="text-center"><button class="btn text-center">Add To Cart</button></p>
+    </div>
+     </div>
+    </div>   
+  </div> -->

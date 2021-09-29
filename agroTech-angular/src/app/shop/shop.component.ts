@@ -9,14 +9,14 @@ import { ProductsService } from '../products.service';
 })
 export class ShopComponent implements OnInit {
 
-  private students : Products[];
+  private products : Products[];
   constructor( private service : ProductsService) { 
 
   }
 
   ngOnInit() {
     this.service.getAllProducts().subscribe(res =>{
-      this.students= res;
+      this.products= res;
     })
   }
 

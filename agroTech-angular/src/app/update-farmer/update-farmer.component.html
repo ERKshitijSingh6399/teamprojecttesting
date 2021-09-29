@@ -22,34 +22,34 @@
 </div> -->
 
 
-
-
-
-
-
 <div class=" text-center wrapper fadeInDown">
   <h4 class="text-center">Update your Account Details</h4>
 
-  <form>
+  <form >
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Id</label>
+      <input type="text" [(ngModel)]="farmer.farmerId" name="farmerId"  class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Id" 
+        >
+    </div>
     <div class="form-group">
       <label for="exampleFormControlInput1">Name</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name"
-        [(ngModel)]="farmer.farmerName">
+      <input type="text" [(ngModel)]="farmer.farmerName" name="farmerName"  class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name"
+        >
     </div>
     <div class="form-group">
       <label for="exampleFormControlInput1">Email address</label>
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email Id"
-        [(ngModel)]="farmer.email">
+      <input type="email" [(ngModel)]="farmer.email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Email Id"
+        >
     </div>
     <div class="form-group">
       <label for="exampleFormControlInput1">Mobile Number</label>
-      <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter Contact Number"
-        [(ngModel)]="farmer.contactNumber">
+      <input type="number" [(ngModel)]="farmer.contactNumber" class="form-control" id="exampleFormControlInput1" placeholder="Enter Contact Number"
+        >
     </div>
     <div class="form-group">
       <label for="exampleFormControlInput1">Enter Age </label>
-      <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Enter Age"
-        [(ngModel)]="farmer.age">
+      <input type="number" [(ngModel)]="farmer.age" class="form-control" id="exampleFormControlInput1" placeholder="Enter Age"
+       >
     </div>
     <div class="form-group">
       <label for="exampleFormControlSelect1">Example select</label>
@@ -61,12 +61,9 @@
     </div>
     <div class="form-group">
       <label for="exampleFormControlTextarea1">Password</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+      <textarea class="form-control"  [(ngModel)]="farmer.password" id="exampleFormControlTextarea1"  placeholder="Enter Password" rows="1"></textarea>
     </div>
-    <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" style="background-color: white;" for="exampleCheck1">Confirm</label>
-  </div>
-  <button type="submit" class="btn btn-primary" style="margin-top: 1rem;" (click)="updatePlayer()">Submit</button>
+   
+  <button type="submit" class="btn btn-primary" style="margin-top: 1rem;" (click)="updateFarmer()">Submit</button>
   </form>
 </div>

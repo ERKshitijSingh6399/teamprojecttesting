@@ -13,6 +13,11 @@ import { AgriFeedComponent } from './agri-feed/agri-feed.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DeleteFarmerComponent } from './delete-farmer/delete-farmer.component';
+import { ViewOrdersComponent } from './view-orders/view-orders.component';
+import { ViewAllOrdersComponent } from './view-all-orders/view-all-orders.component';
+import { MyProfileComponent } from './my-profile/my-profile.component';
+import { AddInformationComponent } from './add-information/add-information.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { HttpClientModule } from '@angular/common/http';
     UpdateFarmerComponent,
     AgriFeedComponent,
     FooterComponent,
-    ContentComponent
+    ContentComponent,
+    DeleteFarmerComponent,
+    ViewOrdersComponent,
+    ViewAllOrdersComponent,
+    MyProfileComponent,
+    AddInformationComponent
   ],
   imports: [
     BrowserModule,

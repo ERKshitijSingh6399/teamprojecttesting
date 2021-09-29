@@ -13,7 +13,7 @@
 }
 
 .chat{
-    background-image: url('src\assets\chat.jpg');
+    background-image: url('src\assets\chat-min.jpg');
     max-width:60%;
     height:80vh;
     margin: 100px auto;

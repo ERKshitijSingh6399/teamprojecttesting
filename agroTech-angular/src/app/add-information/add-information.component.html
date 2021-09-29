@@ -1,0 +1,15 @@
+<div class="wrapper fadeInDown">
+  
+    <div id="formContent">
+      <h2 class="active" routerLink="/register"> Register </h2>
+      <form>
+        <input type="text" [(ngModel)]="information.cropName"  name="name" placeholder="Enter crop Name">
+        <input type="text" [(ngModel)]="information.cropContent"  name="content" placeholder="Enter Content" >
+        <input type="text" [(ngModel)]="information.cropImage" name="contactNumber" placeholder="Enter Image URL">
+
+        <br>
+        <button class="btn btn-primary" type="button" (click)="addInformation()">Add Information </button>
+      </form>
+  
+    </div>
+  </div>
