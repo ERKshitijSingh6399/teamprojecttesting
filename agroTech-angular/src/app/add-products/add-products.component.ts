@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Products } from '../products';
 import { ProductsService } from '../products.service';
+import * as alertyfy from 'alertifyjs';
 
 @Component({
   selector: 'app-add-products',
@@ -19,6 +20,7 @@ export class AddProductsComponent {
      this.service.addProduct(this.product).subscribe(res=>{
        this.product=new Products();
        this.router.navigate(['/products']);
+       alertyfy.success("Successfully Added Products");
      })
    }
 

@@ -14,31 +14,30 @@ export class AppComponent  {
   
   loggedInUser : string;
   farmerId : number;
+  flag: boolean;
+ 
+  // loggedIn() {
+  //   this.flag=false;
+  //   this.loggedInUser = localStorage.getItem('token');
+  //   var object = JSON.parse(this.loggedInUser);
+    
+  //     if(object.farmerId<5){
+  //       this.flag=true;
+  //     }
+  //     else{
+  //       this.flag=false;
+  //     }
+  //     return object.farmerName;
 
-
-  // ngAfterViewInit(){
-  //   this.farmerId=this.child.farmerId;
   // }
 
- loggedIn(){
-  this.loggedInUser = localStorage.getItem('token');
-
-  return this.loggedInUser;
-
- 
+  loggedIn() {
+    this.loggedInUser = localStorage.getItem('token');
+    return this.loggedInUser;
   }
 
-id:number;
-// loggedIn(){
-//   return this.loggedIn;
-// }
-
-receiveId($event){
-  this.id= $event
-}
-
-
 logout(){
+  
   localStorage.removeItem('token');
 }
 

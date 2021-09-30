@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Farmer } from '../farmer';
 import { FarmerService } from './../farmer.service';
 import { Router } from '@angular/router';
-import * as alertyfy from 'alertifyjs'
+import * as alertyfy from 'alertifyjs';
 
 
 @Component({
@@ -28,10 +28,7 @@ export class LoginComponent{
         localStorage.setItem('token',JSON.stringify(data));
         this.route.navigate(['/home']);
          alertyfy.success("Successfully Loged In");
-        // alertyfy
-        // .alert("This is an alert dialog.", function(){
-        //   alertyfy.message('OK');
-        // });
+       
       },
       
       error => {

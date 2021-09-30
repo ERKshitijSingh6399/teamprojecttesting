@@ -2,6 +2,7 @@ import { Component, OnInit ,Input,Output,EventEmitter} from '@angular/core';
 import { Router } from '@angular/router';
 import { Farmer } from '../farmer';
 import { FarmerService } from '../farmer.service';
+import * as alertyfy from 'alertifyjs';
 
 @Component({
   selector: 'app-my-profile',
@@ -27,7 +28,7 @@ export class MyProfileComponent implements OnInit {
 		this.farmer.gender=getUserObj.gender;
 		this.farmer.password=getUserObj.password;
 
-		
+		alertyfy.success("You can see Your Details");
 	  }
 
 	  

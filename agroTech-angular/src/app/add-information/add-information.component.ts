@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Information } from '../information';
 import { InformationService } from '../information.service';
+import * as alertyfy from 'alertifyjs';
 
 @Component({
   selector: 'app-add-information',
@@ -20,6 +21,7 @@ export class AddInformationComponent  {
     this.service.addInformation(this.information).subscribe(res=>{
       this.information=new Information();
       this.router.navigate(['/learn']);
+      alertyfy.success("Successfully Added Information");
     })
   }
 

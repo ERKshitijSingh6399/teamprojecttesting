@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as alertyfy from 'alertifyjs';
 
 @Component({
   selector: 'app-content',
@@ -10,6 +11,9 @@ export class ContentComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
+
+  
 
 }

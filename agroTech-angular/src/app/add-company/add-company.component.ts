@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Companies } from '../companies';
 import { CompaniesService } from '../companies.service';
+import * as alertyfy from 'alertifyjs';
 
 @Component({
   selector: 'app-add-company',
@@ -20,6 +21,7 @@ export class AddCompanyComponent {
     this.service.addCompany(this.companies).subscribe(res=>{
       this.companies=new Companies();
       this.router.navigate(['/viewCompany']);
+      alertyfy.success("Successfully Added A Company");
     })
   }
 

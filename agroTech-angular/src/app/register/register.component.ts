@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Farmer } from '../farmer';
 import { FarmerService } from '../farmer.service';
+import * as alertyfy from 'alertifyjs';
 
 @Component({
   selector: 'app-register',
@@ -18,6 +19,7 @@ export class RegisterComponent {
     this.service.registerFarmer(this.farmer).subscribe(res =>{ 
       this.farmer= new Farmer();     
       this.router.navigate(['/login']);
+      alertyfy.success("Registration Successful");
     })
   }
 

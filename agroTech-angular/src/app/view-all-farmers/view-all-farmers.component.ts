@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Farmer } from '../farmer';
 import { FarmerService } from '../farmer.service';
+import * as alertyfy from 'alertifyjs';
 
 @Component({
   selector: 'app-view-all-farmers',
@@ -16,6 +17,7 @@ export class ViewAllFarmersComponent implements OnInit {
     this.service.getAllFarmers().subscribe(res=>{
       this.farmers=res;
     })
+    alertyfy.success("View All Farmers Here");
   }
 
 
