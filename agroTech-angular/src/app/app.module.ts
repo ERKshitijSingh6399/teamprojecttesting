@@ -7,7 +7,6 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 import { LearnComponent } from './learn/learn.component';
-import { ShopComponent } from './shop/shop.component';
 import { UpdateFarmerComponent } from './update-farmer/update-farmer.component';
 import { AgriFeedComponent } from './agri-feed/agri-feed.component';
 import { FooterComponent } from './footer/footer.component';
@@ -21,6 +20,10 @@ import { AddInformationComponent } from './add-information/add-information.compo
 import { AddProductsComponent } from './add-products/add-products.component';
 import { ViewAllFarmersComponent } from './view-all-farmers/view-all-farmers.component';
 import { CartComponent } from './cart/cart.component';
+import { ProductsComponent } from './products/products.component';
+import { GetFarmerByAgeComponent } from './get-farmer-by-age/get-farmer-by-age.component';
+import { AddCompanyComponent } from './add-company/add-company.component';
+import { ViewCompanyComponent } from './view-company/view-company.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,6 @@ import { CartComponent } from './cart/cart.component';
     RegisterComponent,
     HomeComponent,
     LearnComponent,
-    ShopComponent,
     UpdateFarmerComponent,
     AgriFeedComponent,
     FooterComponent,
@@ -41,7 +43,11 @@ import { CartComponent } from './cart/cart.component';
     AddInformationComponent,
     AddProductsComponent,
     ViewAllFarmersComponent,
-    CartComponent
+    CartComponent,
+    ProductsComponent,
+    GetFarmerByAgeComponent,
+    AddCompanyComponent,
+    ViewCompanyComponent
   ],
   imports: [
     BrowserModule,

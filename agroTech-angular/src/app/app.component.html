@@ -9,7 +9,7 @@
           <a class="nav-link" routerLink="/home">HOME <span class="sr-only"></span></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link"  routerLink="/shop" (click)="getAllProducts()">SHOP</a>
+          <a class="nav-link"  routerLink="/products" (click)="getAllProducts()">SHOP</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link" routerLink="/agriFeed">AGRI-FEED</a>
@@ -24,7 +24,7 @@
         <li *ngIf="loggedIn()" class="nav-item " >
           <div class="dropdown">
             <button class="btn btn-ssuccess dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Hello {{loggedInUser.length}}
+              Hello {{id}}
              
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -33,20 +33,23 @@
 
               <a class="dropdown-item" routerLink="/myProfile">My Profile</a>
               <a class="dropdown-item" routerLink="/updateFarmer">Update Account</a>
-              <a class="dropdown-item" routerLink="/deleteFarmer">Delete Account</a>
-              <a class="dropdown-item" routerLink="/viewOrders">View Cart</a>
+              <a class="dropdown-item" routerLink="/viewCart">View Cart</a>
               <a class="dropdown-item" routerLink="/viewOrders">View Orders</a>
+              <a class="dropdown-item" routerLink="/viewCompany">Sell Crops</a>
               <a class="dropdown-item" (click)="logout()" routerLink="/home">Log Out</a>
                       
                             <!-- *ngIf="flag" for admin -->
                
               <a class="dropdown-item" routerLink="/myProfile">My Profile</a>
-              <a class="dropdown-item" routerLink="/viewOrders">View All Orders</a>
-              <a class="dropdown-item" routerLink="/viewOrders">View All Farmers</a>
+              <a class="dropdown-item" routerLink="/viewAllOrders">View All Orders</a>
+              <a class="dropdown-item"  routerLink="/viewAllFarmers">View All Farmers</a>
               <a class="dropdown-item" routerLink="/deleteFarmer">Delete Farmer</a>
               <a class="dropdown-item" routerLink="/addProducts">Add Products</a>
+              <a class="dropdown-item" routerLink="/addCompany">Add Company</a>
+              <a class="dropdown-item" routerLink="/viewCompany">View Companies</a>
+              <a class="dropdown-item" routerLink="/addProducts">Add Products</a>
               <a class="dropdown-item" routerLink="/addInformation">Add Information</a>
-              <a class="dropdown-item" routerLink="/home">Log Out</a>
+              <a class="dropdown-item" (click)="logout()" routerLink="/home">Log Out</a>
 
               
             </div>

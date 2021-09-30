@@ -13,21 +13,11 @@ export class ViewAllFarmersComponent implements OnInit {
   constructor(private service : FarmerService) { }
 
   ngOnInit() {
-    // this.service.getAllFarmers().subscribe(res=>{
-    //   this.farmers=res;
-    // })
+    this.service.getAllFarmers().subscribe(res=>{
+      this.farmers=res;
+    })
   }
 
 
-  // private students : Student[];
-  // constructor( private service : StudentService) { 
-
-  // }
-
-  // ngOnInit() {
-  //   this.service.getAllStudents().subscribe(res =>{
-  //     this.students= res;
-  //   })
-  // }
 
 }

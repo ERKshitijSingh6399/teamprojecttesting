@@ -1,5 +1,18 @@
 
- <button class="btn btn-success" type="button"  routerLink="/getFarmerByAge">Search</button>
+<div class="wrapper fadeInDown">
+  
+    <div id="formContent">
+      <h2 class="active" > Enter Age </h2>
+      <form>
+        <input type="text" [(ngModel)]="farmers.age"  name="age" placeholder="Enter Farmer age">
+        <br>
+        <button class="btn btn-success" type="button" (click)="getAllFarmerByAge()">Search</button>
+      </form>
+    </div>
+  </div>
+
+
+
 
 
 <div class="container-fluid">

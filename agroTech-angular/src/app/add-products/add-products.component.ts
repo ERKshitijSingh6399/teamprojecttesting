@@ -10,15 +10,15 @@ import { ProductsService } from '../products.service';
 })
 export class AddProductsComponent {
 
-  products : Products;
+  product : Products;
   constructor(private service : ProductsService,private router : Router) {
-    this.products=new Products();
+    this.product=new Products();
    }
 
    public addProduct(){
-     this.service.addProduct(this.products).subscribe(res=>{
-       this.products=new Products();
-       this.router.navigate(['/shop']);
+     this.service.addProduct(this.product).subscribe(res=>{
+       this.product=new Products();
+       this.router.navigate(['/products']);
      })
    }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input,Output,EventEmitter} from '@angular/core';
 import { Router } from '@angular/router';
 import { Farmer } from '../farmer';
 import { FarmerService } from '../farmer.service';
@@ -26,6 +26,19 @@ export class MyProfileComponent implements OnInit {
 		this.farmer.age=getUserObj.age;
 		this.farmer.gender=getUserObj.gender;
 		this.farmer.password=getUserObj.password;
+
+		
 	  }
+
+	  
 	}
+
+	id  : number= this.farmer.farmerId;
+
+	@Output() idEvent = new EventEmitter<number>();
+
+	sendId(){
+		this.idEvent.emit(this.id)
+	}
+
 }
