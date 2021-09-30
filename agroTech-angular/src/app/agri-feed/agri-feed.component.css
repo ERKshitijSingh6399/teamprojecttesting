@@ -1,4 +1,4 @@
-.chat-grid{
+/* .chat-grid{
      overflow-y: scroll;
      position: relative;
      height: 80vh;
@@ -78,4 +78,41 @@
     width: 180px;
     text-align: centre;
     opacity: 0.7;
+} */
+
+
+
+
+
+.feed{
+    width:80vw;
+    height:80vh;
+    margin:100px 100px 0px -80px;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    background-color: burlywood;
+}
+.post-area{
+    padding:0.5rem;
+    margin:0.5rem;
+    background-color: aqua;
+    overflow-y: scroll;
+    border: 2px solid black;
+}
+.view-post{
+    width: 100%;
+    height:18vh;
+    padding: 0.5rem;
+    border: 2px solid black;
+}
+.div-send{
+    padding:0.5rem;
+    margin:0.5rem;
+    background-color: aqua;
+}
+input{
+    width:100%;
+    overflow-y: scroll;
+    margin:0.5rem 0rem;
+    height:10vh;
 }

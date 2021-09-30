@@ -18,6 +18,9 @@ import { ViewOrdersComponent } from './view-orders/view-orders.component';
 import { ViewAllOrdersComponent } from './view-all-orders/view-all-orders.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { AddInformationComponent } from './add-information/add-information.component';
+import { AddProductsComponent } from './add-products/add-products.component';
+import { ViewAllFarmersComponent } from './view-all-farmers/view-all-farmers.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { AddInformationComponent } from './add-information/add-information.compo
     ViewOrdersComponent,
     ViewAllOrdersComponent,
     MyProfileComponent,
-    AddInformationComponent
+    AddInformationComponent,
+    AddProductsComponent,
+    ViewAllFarmersComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

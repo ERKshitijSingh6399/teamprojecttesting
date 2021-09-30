@@ -31,6 +31,7 @@ export class AppComponent {
 
  loggedIn(){
   this.loggedInUser = localStorage.getItem('token');
+
   return this.loggedInUser;
 }
 
@@ -44,4 +45,5 @@ export class AppComponent {
 logout(){
   localStorage.removeItem('token');
 }
+
 }

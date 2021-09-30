@@ -24,7 +24,7 @@
         <li *ngIf="loggedIn()" class="nav-item " >
           <div class="dropdown">
             <button class="btn btn-ssuccess dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Hello {{loggedInUser}}
+              Hello {{loggedInUser.length}}
              
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -38,14 +38,15 @@
               <a class="dropdown-item" routerLink="/viewOrders">View Orders</a>
               <a class="dropdown-item" (click)="logout()" routerLink="/home">Log Out</a>
                       
-                   <!-- *ngIf="flag" for admin -->
+                            <!-- *ngIf="flag" for admin -->
                
-        <!--  <a class="dropdown-item" routerLink="/myProfile">My Profile</a>
+              <a class="dropdown-item" routerLink="/myProfile">My Profile</a>
               <a class="dropdown-item" routerLink="/viewOrders">View All Orders</a>
               <a class="dropdown-item" routerLink="/viewOrders">View All Farmers</a>
-               <a class="dropdown-item" routerLink="/deleteFarmer">Delete Account</a>
               <a class="dropdown-item" routerLink="/deleteFarmer">Delete Farmer</a>
-              <a class="dropdown-item" routerLink="/home">Log Out</a> -->
+              <a class="dropdown-item" routerLink="/addProducts">Add Products</a>
+              <a class="dropdown-item" routerLink="/addInformation">Add Information</a>
+              <a class="dropdown-item" routerLink="/home">Log Out</a>
 
               
             </div>

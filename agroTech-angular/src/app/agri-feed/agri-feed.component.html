@@ -45,7 +45,7 @@
 
 
 
-<div class="chat">
+<!-- <div class="chat">
     <div class="div-chat">
         <div class="chat-grid">
             <div class="chat-context-expert">
@@ -87,5 +87,35 @@
                     <button type="submit" class="btn btn-success">Send</button>
                     </span>
                </div>
+    </div>
+</div> -->
+
+
+
+
+
+<div class="feed">
+    <div class="post-area">
+        <div class="view-post">
+            <div class="container-fluid">
+                <div class="card" *ngFor="let player of players">
+                    <div class="card-body">
+                        <p class="card-title">date : {{query.dateQuery}}</p>
+                        <p class="card-title">question:{{query.question}}</p>
+                        <p class="card-text">answer: {{query.answer}}</p>
+                        <p class="card-text">Farmer query: {{farmer.farmerName}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Date with Date pipe with formatting : -->
+​
+    </div>
+    <div class="div-send">
+        <form (submit)="addQuery()">
+            <label for="input-query" class="text-center">Enter Query</label>
+            <input type="text" id="input-query" name="input-query" [(ngModel)]="query.question">
+            <button type="submit" class="btn btn-info">POST</button>
+        </form>
     </div>
 </div>

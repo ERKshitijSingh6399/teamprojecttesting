@@ -18,11 +18,7 @@
   <div id="formContent">
     <h2 class="active" routerLink="/login"> Login </h2>
     <h2 class="inactive underlineHover" routerLink="/register"> Register </h2>
-    <!-- <form>
-      <input type="email" [(ngModel)]="farmer.email" id="login"  name="email" placeholder="login">
-      <input type="password" [(ngModel)]="farmer.password" id="password" name="password" placeholder="password">
-      <button class="btn btn-primary" type="button" (click)="getAccountByEmail()">Login</button>
-    </form> -->
+   
     <form #loginform="ngForm" (ngSubmit)="loginFarmer()">
       <small class="text-danger" *ngIf="flag">{{msg}}</small>
       <div class="form-group">

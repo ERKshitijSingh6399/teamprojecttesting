@@ -1,0 +1,16 @@
+<div class="wrapper fadeInDown">
+  
+    <div id="formContent">
+      <h2 class="active" routerLink="/register"> Add Product </h2>
+      <form>
+        <input type="text" [(ngModel)]="products.productName"  name="productName" placeholder="Enter product Name">
+        <input type="text" [(ngModel)]="products.productCompanyName" name="productCompanyName" placeholder="Enter Company name">
+        <input type="text" [(ngModel)]="products.productPrice"  name="productPrice" placeholder="Enter Product Price" >
+        <input type="text" [(ngModel)]="products.productQuantity" name="productQuantity" placeholder="Enter Product Quantity">       
+        <input type="text" [(ngModel)]="products.productImage" name="productImage" placeholder="Enter Image link">
+
+        <br>
+        <button class="btn btn-primary" type="button" (click)="addProduct()">Add Product </button>
+      </form>
+    </div>
+</div>

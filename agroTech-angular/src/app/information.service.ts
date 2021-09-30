@@ -11,11 +11,11 @@ export class InformationService {
   private url :string;
 
   constructor(private http: HttpClient) { 
-    this.url="http://localhost:9100/farmer";
+    this.url="http://localhost:9100/admins";
   }
 
   
   public addInformation( information : Information) : Observable<Information>{
-    return this.http.post<Information>(this.url + "/addInformation",information);
+    return this.http.post<Information>(this.url + "/addinformation",information);
   }
 }

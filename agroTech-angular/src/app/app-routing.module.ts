@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AddInformationComponent } from './add-information/add-information.component';
+import { AddProductsComponent } from './add-products/add-products.component';
 import { AgriFeedComponent } from './agri-feed/agri-feed.component';
+import { CartComponent } from './cart/cart.component';
 import { DeleteFarmerComponent } from './delete-farmer/delete-farmer.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
@@ -29,6 +31,9 @@ const routes: Routes = [
   {path: 'viewAllOrders',component:ViewAllOrdersComponent},
   {path: 'myProfile',component:MyProfileComponent},
   {path: 'addInformation',component:AddInformationComponent},
+  {path: 'addProducts',component:AddProductsComponent},
+  {path: 'cart',component:CartComponent},
+  
 ];
 
 @NgModule({

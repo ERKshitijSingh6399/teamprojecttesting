@@ -4,4 +4,5 @@ export class Information {
     cropName : string;
     cropContent : string;
     cropImage : string;
+    link : string;
 }

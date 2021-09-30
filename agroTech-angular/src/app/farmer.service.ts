@@ -33,6 +33,10 @@ export class FarmerService {
   public deleteFarmer(farmerId: number){
     this.http.delete(this.url + "/deletefarmer/"+farmerId);
   }
+
+  // public getAllFarmers(): Observable<Farmer[]>{
+  //   return this.http.get<Farmer[]>(this.url+"s")
+  // }
  
 
   
