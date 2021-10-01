@@ -27,8 +27,10 @@ export class FarmerService {
     return this.http.put<Farmer>(this.url + "farmer/updatefarmer", farmer);
   }
   public deleteFarmer(farmerId: number){
-    this.http.delete(this.url + "farmer/deletefarmer/"+farmerId);
+    return this.http.delete(this.url + "farmer/deletefarmer/"+farmerId);
   }
+
+  
 
   public getAllFarmers(): Observable<Farmer[]>{
     return this.http.get<Farmer[]>(this.url+"admins/getallfarmers")

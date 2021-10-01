@@ -13,8 +13,8 @@ export class AppComponent  {
 
   
   loggedInUser : string;
-  farmerId : number;
-  flag: boolean;
+  // farmerId : number;
+  // flag: boolean;
  
   // loggedIn() {
   //   this.flag=false;
@@ -31,14 +31,33 @@ export class AppComponent  {
 
   // }
 
+
+  flag : boolean;
+
+  login : boolean;
+
   loggedIn() {
+    // this.login=true;
     this.loggedInUser = localStorage.getItem('token');
+    // console.log(this.login);
+    // var object = JSON.parse(this.loggedInUser);
+    
+    //   if(object.farmerId<5){
+    //     this.flag=true;
+    //   }
+    //   else{
+    //     this.flag=false;
+    //   }
     return this.loggedInUser;
   }
+    
 
-logout(){
-  
+   logout(){  
   localStorage.removeItem('token');
-}
+  // this.login=false;
+  // console.log(this.login);
+  }
+
+ 
 
 }

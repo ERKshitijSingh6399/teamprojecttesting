@@ -1,8 +1,7 @@
+<button class="btn btn-success" type="button"  routerLink="/getFarmerByAge">Search</button>
 
- <button class="btn btn-success" type="button"  routerLink="/getFarmerByAge">Search</button>
 
-
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <div class="card" *ngFor="let farmer of farmers" >
         <div class="card-body">
             <p class="card-text">Id: {{farmer.farmerId}}</p>          
@@ -14,7 +13,42 @@
             <p class="card-text">Email : {{farmer.password}}</p>         
         </div>       
     </div>
-    
-    <br>
 </div>
-<br> <br> <br> <br>
+<br> <br> <br> <br> -->
+
+<div class="container" id="farmers">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Farmer Name</th>
+                            <th>Farmer Age</th>
+                            <th>Farmer Contact Number</th>
+                            <th>Farmer Gender</th>
+                            <th>Farmer Email</th>
+                            <th>Farmer Password</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let farmer of farmers">
+                            
+                            
+                            <td >{{farmer.farmerId}}</td>
+                            <th >{{farmer.farmerName}}</th>
+                            
+                            <td >{{farmer.age}}</td>
+                            <td > {{farmer.contactNumber}}</td>
+                            <td > {{farmer.gender}}</td>
+                            
+                            <td > {{farmer.email}}</td>
+                            <td > {{farmer.password}}</td>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>

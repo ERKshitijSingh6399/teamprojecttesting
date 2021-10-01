@@ -14,13 +14,13 @@
         </div>
         <div class="item">
             <a (click)="filter('fertilizer')">
-                <img src="assets\fertilizer.jfif" alt="fertilizer-img">
+                <img src="assets\fertilizers (1).jpeg" alt="fertilizer-img">
                 <h6>FERTILIZERS</h6>
             </a>
         </div>
         <div class="item">
             <a (click)="filter('reports')">
-                <img src="assets\reports.jfif" alt="crop-reports">
+                <img src="assets\crop reports.jpeg" alt="crop-reports">
                 <h6>CROP REPORTS</h6>
             </a>
         </div>
@@ -43,7 +43,7 @@
                 <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.productCompanyName}}</p>
                 <p><strong>Price:</strong> ${{item.productPrice}}</p>
                 <p><strong>Quantity:</strong> ${{item.productQuantity}}</p>
-                <button class="btn btn-primary" (click)=addtocart(item)>Add to cart</button>
+                <button class="btn btn-primary" (click)="addtocart(item)">Add to cart</button>
             </div>
         </ng-container>
 ​

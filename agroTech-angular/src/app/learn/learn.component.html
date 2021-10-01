@@ -71,14 +71,14 @@
   <div class="row">
       <ng-container *ngFor="let information of information">
           <div class="card col-md-3">
-              <img src="{{information.cropImage}}" alt="">
+            <p class="text-center"> <img src="{{information.cropImage}}" alt=""></p>
               <h5 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{information.cropName}}</h5>
               <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{information.cropContent}}</p>
              
-              <button class="btn btn-primary"  >Learn more..</button>
+              <a href="{{information.link}}" class="btn btn-success">Learn more..</a>
           </div>
       </ng-container>
   </div>
 </div>
-<!-- (click)={{information.link}} -->
+
 

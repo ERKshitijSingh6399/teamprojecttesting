@@ -17,7 +17,7 @@ export class LoginComponent{
   farmer = new Farmer();
   msg = "";
   flag: boolean=false;
-
+  
 
   constructor(private _service: FarmerService, private route: Router) { }
 
@@ -26,9 +26,11 @@ export class LoginComponent{
       data => {
         console.log("response received");
         localStorage.setItem('token',JSON.stringify(data));
+        // var obj=JSON.parse(localStorage.getItem('token'));
+        // if(obj!=null){
         this.route.navigate(['/home']);
          alertyfy.success("Successfully Loged In");
-       
+        
       },
       
       error => {

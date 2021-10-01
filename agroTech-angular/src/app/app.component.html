@@ -18,37 +18,39 @@
           <a class="nav-link" routerLink="/learn">LEARN</a>
         </li>
         
-        <li  *ngIf="!loggedIn" class="nav-item" >
+        <li  *ngIf="! loggedIn()" class="nav-item" >
           <a class="nav-link"  routerLink="/login">LOGIN</a>   
         </li>
-        <li *ngIf="loggedIn" class="nav-item " >
+        <li *ngIf=" loggedIn()" class="nav-item " >
           <div class="dropdown">
             <button class="btn btn-ssuccess dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Hello {{loggedIn()}}
+              My Account
              
             </button>
             <div  class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
                             <!-- *ngIf="flag" for farmer -->
+                            <!-- *ngIf="!flag" -->
+              <a  class="dropdown-item" routerLink="/myProfile">My Profile</a>
+              <a   class="dropdown-item" routerLink="/updateFarmer">Update Account</a>
+              <a   class="dropdown-item" routerLink="/viewCart">View Cart</a>
+              <a   class="dropdown-item" routerLink="/viewOrders">View Orders</a>
+              <a   class="dropdown-item" routerLink="/viewCompany">Sell Crops</a>
 
-              <a *ngIf="!flag" class="dropdown-item" routerLink="/myProfile">My Profile</a>
-              <a *ngIf="!flag"  class="dropdown-item" routerLink="/updateFarmer">Update Account</a>
-              <a  *ngIf="!flag" class="dropdown-item" routerLink="/viewCart">View Cart</a>
-              <a *ngIf="!flag"  class="dropdown-item" routerLink="/viewOrders">View Orders</a>
-              <a *ngIf="!flag"  class="dropdown-item" routerLink="/viewCompany">Sell Crops</a>
+              
             
                       
                             <!-- *ngIf="flag" for admin -->
                
-              <a *ngIf="flag" class="dropdown-item" routerLink="/myProfile">My Profile</a>
-              <a *ngIf="flag" class="dropdown-item" routerLink="/viewAllOrders">View All Orders</a>
-              <a *ngIf="flag" class="dropdown-item"  routerLink="/viewAllFarmers">View All Farmers</a>
-              <a *ngIf="flag" class="dropdown-item" routerLink="/deleteFarmer">Delete Farmer</a>
-              <a *ngIf="flag"  class="dropdown-item" routerLink="/addProducts">Add Products</a>
-              <a *ngIf="flag"  class="dropdown-item" routerLink="/addCompany">Add Company</a>
-              <a *ngIf="flag"  class="dropdown-item" routerLink="/viewCompany">View Companies</a>
-              <a *ngIf="flag"  class="dropdown-item" routerLink="/addProducts">Add Products</a>
-              <a *ngIf="flag"  class="dropdown-item" routerLink="/addInformation">Add Information</a>
+              <a  class="dropdown-item" routerLink="/myProfile">My Profile</a>
+              <a  class="dropdown-item" routerLink="/viewAllOrders">View All Orders</a>
+              <a  class="dropdown-item"  routerLink="/viewAllFarmers">View All Farmers</a>
+              <a  class="dropdown-item" routerLink="/deleteFarmer">Delete Farmer</a>
+              <a   class="dropdown-item" routerLink="/addProducts">Add Products</a>
+              <a  class="dropdown-item" routerLink="/addCompany">Add Company</a>
+              <a  class="dropdown-item" routerLink="/viewCompany">View Companies</a>
+              <a   class="dropdown-item" routerLink="/addProducts">Add Products</a>
+              <a  class="dropdown-item" routerLink="/addInformation">Add Information</a>
               <a  class="dropdown-item" (click)="logout()" routerLink="/home">Log Out</a>
 
               
